@@ -1,0 +1,2 @@
+name = "オノノクス"
+puts name

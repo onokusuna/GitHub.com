@@ -5,13 +5,13 @@ input = gets.to_i # 整数に直す
 
 if # 条件１
 	input%15 == 0 #式が必要 最後にend
-	puts "Fizzbuzz"
+	puts "FizzBuzz"
 elsif # 条件２
 	input%3 == 0 #式が必要 最後にend
-	"結果は…#{Fizz}"
+	puts "Fizz"
 elsif # 条件３
 	input%5 == 0 #式が必要 最後にend
-	"結果は…#{Buzz}"
+	puts "Buzz"
 else # どれにも該当しない場合
-	"結果は…#{input}"
+	input.to_s
 end

@@ -1,0 +1,63 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.clearfix::after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+main {/* 作るときは外側 */
+	width: 960px;
+	margin: 50 auto;/* 横幅0pxでは無くauto！ */
+}
+
+.step-box {
+	float: left;
+	width: 300px;/* stepbox自体の横幅 */
+	margin-right: 30px;/* 一番外側の右側の空白 */
+	padding: 10px;/* 一番外側の内側の空白 */
+	position: relative;
+	border: 1px solid #eee;/* step-boxの枠線 */
+}
+
+.step-box:last-child {/* step-boxという同じ名前でセレクタを作成したのでchildを使用.上記のmargiｎ-rightを消す */
+	margin-right: 0;
+}
+
+.step-img1 {
+	height: 150px;/* どこからきた？ */
+  	background-image: url(img_HTMLchapter9/flow01.png);
+  	background-size: cover;
+  	background-position: bottom;/* 背景画像の表示開始位置を指定 */
+}
+
+.step-img2{
+  	height: 150px;
+  	background-image: url(img_HTMLchapter9/flow02.png);
+  	background-size: cover;
+  	background-position: bottom;
+}
+
+.step-img3{
+  	height: 150px;
+  	background-image: url(img_HTMLchapter9/flow03.png);
+  	background-size: cover;
+  	background-position: bottom;
+}
+
+.step-num {
+	position: absolute;
+	top: 0;/* 特に単位は書かない？ */
+	left: 0;
+	background-color: #ff9a4b;
+	color: #fff;
+	padding: 3px;
+}
+
+.title {
+	margin: 15px 0 5px;
+}
